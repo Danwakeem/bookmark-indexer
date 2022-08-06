@@ -6,7 +6,7 @@
   "permissions": [
     "bookmarks"
   ],
-  "omnibox": { "keyword" : "::" },
+  "omnibox": { "keyword" : "s" },
   "background": {
     "service_worker": "build/background.js"
   },

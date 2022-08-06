@@ -23,7 +23,12 @@ const flattenedBookmarks = [
   },
   {
     prefix: '/folder',
-    title: 'something in the way',
+    title: 'boom something in the way',
+    url: 'http://no.com',
+  },
+  {
+    prefix: '/folder',
+    title: 'boom something - another',
     url: 'http://no.com',
   },
 ];
@@ -47,9 +52,31 @@ describe('Match Bookmarks', () => {
   });
 
   it('should find matching bookmarks by title and folder', () => {
-    const text = 'folder;something';
+    const text = 'folder boom';
     const res = matchBookmarks(flattenedBookmarks, text);
     expect(res).toEqual([
+      {
+        content: flattenedBookmarks[4].url,
+        description: `${flattenedBookmarks[4].prefix} ${flattenedBookmarks[4].title}`,
+        deletable: false,
+      },
+      {
+        content: flattenedBookmarks[5].url,
+        description: `${flattenedBookmarks[5].prefix} ${flattenedBookmarks[5].title}`,
+        deletable: false,
+      },
+    ]);
+  });
+
+  it('should sort bookmarks by most matches', () => {
+    const text = 'folder boom another';
+    const res = matchBookmarks(flattenedBookmarks, text);
+    expect(res).toEqual([
+      {
+        content: flattenedBookmarks[5].url,
+        description: `${flattenedBookmarks[5].prefix} ${flattenedBookmarks[5].title}`,
+        deletable: false,
+      },
       {
         content: flattenedBookmarks[4].url,
         description: `${flattenedBookmarks[4].prefix} ${flattenedBookmarks[4].title}`,

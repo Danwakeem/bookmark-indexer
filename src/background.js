@@ -4,7 +4,10 @@ const matchBookmarks = require('./match-bookmarks');
 let flattenedBookmarks = [];
 
 chrome.omnibox.onInputChanged.addListener((text, suggest) => {
-  suggest(matchBookmarks(flattenedBookmarks, text));
+  const matches = matchBookmarks(flattenedBookmarks, text);
+  if (matches.length > 0) {
+    suggest(matches);
+  }
 });
 
 chrome.omnibox.onInputEntered.addListener((text) => {

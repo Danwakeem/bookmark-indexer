@@ -1,0 +1,9 @@
+/node_modules
+/.vscode
+.eslintcache
+.esbuild
+*.env
+*.local
+*.log
+.DS_Store
+/public/build

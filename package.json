@@ -1,0 +1,24 @@
+{
+  "name": "google-bookmark-search",
+  "version": "1.0.0",
+  "description": "A fun google bookmarks search extension",
+  "main": "src/background.js",
+  "repository": "https://github.com/Danwakeem/google-bookmarks-search",
+  "author": "Danwakeem",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "node esbuild.js",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "test": "jest src/**"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.53",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^28.1.3",
+    "prettier": "^2.7.1"
+  }
+}

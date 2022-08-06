@@ -1,0 +1,88 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "dateAdded": 1542595180596,
+            "id": "60",
+            "index": 0,
+            "parentId": "1",
+            "title": "PiPify",
+            "url": "https://something.com"
+          },
+          {
+            "children": [
+              {
+                "dateAdded": 1422178788910,
+                "id": "62",
+                "index": 0,
+                "parentId": "61",
+                "title": "folder 1 item",
+                "url": "https://whatever.com"
+              },
+              {
+                "children": [
+                  {
+                    "dateAdded": 1422178788910,
+                    "id": "64",
+                    "index": 0,
+                    "parentId": "63",
+                    "title": "deep item 1",
+                    "url": "https://whatever-deep.com"
+                  }
+                ],
+                "dateAdded": 1422178788910,
+                "id": "63",
+                "index": 1,
+                "parentId": "61",
+                "title": "folder 1 subfolder 1"
+              }
+            ],
+            "dateAdded": 1601645858992,
+            "dateGroupModified": 1601645858992,
+            "id": "61",
+            "index": 1,
+            "parentId": "1",
+            "title": "folder 1"
+          }
+        ],
+        "dateAdded": 1635274005403,
+        "dateGroupModified": 1659716104686,
+        "id": "1",
+        "index": 0,
+        "parentId": "0",
+        "title": "Bookmarks Bar"
+      },
+      {
+        "children": [],
+        "dateAdded": 1635274005403,
+        "id": "2",
+        "index": 1,
+        "parentId": "0",
+        "title": "Other Bookmarks"
+      },
+      {
+        "children": [
+          {
+            "dateAdded": 1542595180596,
+            "id": "65",
+            "index": 0,
+            "parentId": "3",
+            "title": "Mobile thing",
+            "url": "https://mobile.com"
+          }
+        ],
+        "dateAdded": 1635274005403,
+        "dateGroupModified": 1543385121586,
+        "id": "3",
+        "index": 2,
+        "parentId": "0",
+        "title": "Mobile Bookmarks"
+      }
+    ],
+    "dateAdded": 1658793316403,
+    "id": "0",
+    "title": ""
+  }
+]

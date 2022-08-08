@@ -1,5 +1,5 @@
 {
-  "name": "google-bookmark-search",
+  "name": "bookmark-indexer",
   "version": "1.0.0",
   "description": "A fun google bookmarks search extension",
   "main": "src/background.js",
